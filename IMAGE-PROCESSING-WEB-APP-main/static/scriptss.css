@@ -1,0 +1,169 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #f4f4f4;
+  padding: 20px;
+}
+
+/* Navbar */
+nav {
+  width: 100%;
+  background: #009579;
+  padding: 15px;
+  text-align: center;
+}
+
+nav .logo {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: white;
+}
+
+/* Main Container */
+.container {
+  max-width: 800px;
+  width: 100%;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+/* Editor Panel */
+.editor-panel {
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.options {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.options input {
+  margin-right: 5px;
+}
+
+.options label {
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+/* Preview Image */
+.preview-img {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+.preview-img img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Controls */
+.controls {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.row {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+}
+
+button {
+  background: #009579;
+  color: white;
+  font-size: 1rem;
+  font-weight: 500;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #00785a;
+}
+
+.choose-img {
+  background: #ff9f00;
+}
+
+.choose-img:hover {
+  background: #cc7a00;
+}
+
+.save-img {
+  background: #007bff;
+}
+
+.save-img:hover {
+  background: #0056b3;
+}
+
+.reset-filter {
+  background: #dc3545;
+}
+
+.reset-filter:hover {
+  background: #a71d2a;
+}
+
+/* Back Button */
+.back-btn {
+  margin-top: 20px;
+  background: #6c757d;
+}
+
+.back-btn:hover {
+  background: #545b62;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  .options {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 100%;
+  }
+}

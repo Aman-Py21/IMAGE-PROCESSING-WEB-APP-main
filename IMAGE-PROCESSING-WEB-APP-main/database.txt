@@ -1,0 +1,8 @@
+//this is database code. Run this command on MYSQL 
+
+CREATE DATABASE user_db;
+ use user_db;
+  CREATE TABLE users (id INT AUTO_INCREMENT PRIMARY KEY,email VARCHAR(255) UNIQUE NOT NULL,password VARCHAR(255) NOT NULL);
+
+
+

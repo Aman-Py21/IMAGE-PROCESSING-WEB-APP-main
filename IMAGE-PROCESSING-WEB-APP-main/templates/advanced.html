@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Image Processing</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='scriptss.css') }}">
+</head>
+<body>
+
+    <nav>
+        <div>
+            <h1 class="logo">FilterForge - Advanced Image Processing</h1>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="wrapper">
+            <div class="editor-panel">
+                <div class="filter">
+                    <label class="title">Advanced Filters</label>
+                    <div class="options">
+                        <input type="checkbox" id="cartoon" value="cartoon"> Cartoon Effect
+                        <input type="checkbox" id="pencil" value="pencil"> Pencil Sketch
+                        <input type="checkbox" id="oil" value="oil"> Oil Painting
+                        <input type="checkbox" id="edge" value="edge"> Edge Detection
+                    </div>
+                </div>
+            </div>
+            
+            <div class="preview-img">
+                <img id="previewImg" src="{{ url_for('static', filename='images/image-placeholder.svg') }}" alt="preview-img">
+            </div>
+        </div>
+
+        <div class="controls">
+            <button onclick="applyEffects()">Apply Selected Effects</button>
+            <button onclick="resetImage()">Reset Image</button>
+            <div class="row">
+                <input type="file" class="file-input" accept="image/*" hidden>
+                <button class="choose-img">Choose Image</button>
+                <button onclick="downloadImage()">Download Image</button>
+            </div>
+        </div>
+    </div>
+
+    <button class="back-btn" onclick="window.location.href='/index'">Back to Home</button>
+    
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+
+</body>
+</html>
